@@ -34,7 +34,7 @@ To run this project, you will need to add the following environment variables to
 **Patterns** MVVM
 
 **Skills** Benchmark,MacroBenchmark,Proguard R8, FreshHttp, Dagger-hilt,
-
+  
 
 
 
