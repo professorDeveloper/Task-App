@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="violet_400">#91A6FF</color>
+    <color name="violet_700">#3358FF</color>
+    <color name="violet_400_50">#8091A6FF</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#EEEEEE</color>
+    <color name="fg">#A8EEEEEE</color>
+    <color name="bg_filter_dialog">#2B2B2B</color>
+    <color name="bg_search">#3C3F41</color>
+    <color name="bg_opp">@color/bg_black</color>
+    <color name="nav_bg_inv">#00FFFFFF</color>
+    <color name="status">#9EB8B8B8</color>
+    <color name="button_icon">#D5FFFFFF</color>
+    <color name="nav_status">#80FFFFFF</color>
+    <color name="dark">#181A20</color>
+    <color name="banner_bg">#232323</color>
+    <color name="medium_grey">#1F1F1F</color>
+    <color name="light_grey">#8E8E8E</color>
+    <color name="blue">#68A6CD</color>
+    <color name="bg">@color/white</color>
+    <color name="alter_bg">#121212</color>
+    <color name="ui_bg">@color/white</color>
+    <color name="nav_bg">#1C1C1C</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#f47520</color>
+    <color name="indigo">#213945</color>
+
+    <color name="text">@color/black</color>
+    <color name="iconColor">#696969</color>
+    <color name="loading">@color/orange</color>
+    <color name="error">#d9381e</color>
+
+    <color name="gray">#696969</color>
+    <color name="gray_background">#e0e0e0</color>
+
+    <color name="watching">#67bb6d</color>
+    <color name="completed">#5c6cc3</color>
+    <color name="planToWatch">#b764bc</color>
+    <color name="onHold">#ffc928</color>
+    <color name="dropped">#ef5450</color>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_recommendations">Watch/Read some Anime or Manga to get RecommendationsWatch/Read some Anime or Manga to get Recommendations</string>
+    <string name="search_results">Lessons</string>
+    <string name="more">More</string>
+    <string name="hideDetail">Hide</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_description"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_detail_background"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:gravity="start"
+        android:lineSpacingExtra="6dp"
+        android:maxLines="3"
+        tools:text="Do your photos sometimes look blurry? You're definitely not alone! Watch this video and discover a hidden iPhone camera feature for taking tack sharp photos. Using this simple feature will ensure that you never take a blurry iPhone photo again!" />
+
+    <TextView
+        android:id="@+id/tv_show_hide_description"
+        style="@style/TextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="1"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/more"
+        android:textColor="@color/orange" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable-v24/item_score.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable-v24/layout_detail_background.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/anim_pause_to_play.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/anim_play_to_pause.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/animation_logo.xml" value="0.185" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/control_background_40dp.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/gradient_bottom_background.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/gradient_bottom_background_auth.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/gradient_top_background.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_round_arrow_back_ios_new_24.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_round_brightness_auto_24.xml" value="0.185" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_round_pause_24.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_round_play_arrow_24.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_round_play_circle_24.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_round_view_comfy_24.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_skip.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ic_upi_icon.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/item_number_hd.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/linear_gradient_bg.xml" value="0.185" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/linear_gradient_black.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/linear_gradient_black_horizontal.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/linear_gradient_nav.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/payment_back.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/round_corner.xml" value="0.248" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/shape_corner_16dp.xml" value="0.214" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/drawable/ui_bg.xml" value="0.1901886860897383" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/activity_exo_player.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/activity_main.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/course_item.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/custom_controller.xml" value="0.18113208199022698" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/description_layout.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/detail_screen.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/dialog_welcome.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/exo_player_view.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/fragment_pay_screen.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/home_screen.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/item_home_page.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/item_progress.xml" value="0.24140625" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/itme_course_large.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/itme_course_page.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/no_internet.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TaskApp/app/src/main/res/layout/payment_sheet_dialog.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

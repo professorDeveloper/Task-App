@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exo_controller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/exo_black_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A8000000" />
+
+    <FrameLayout
+        android:id="@+id/exo_controller_cont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exo_brightness_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="16dp"
+            android:clipChildren="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="#A9000000"
+            app:cardCornerRadius="24dp"
+            app:contentPadding="4dp">
+
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_height="236dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/exo_brightness"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginBottom="-20dp"
+                    android:rotation="270"
+                    android:value="2"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    app:labelBehavior="gone"
+                    app:thumbElevation="0dp"
+                    app:trackHeight="24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    app:srcCompat="@drawable/ic_round_brightness_medium_24"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exo_volume_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:clipChildren="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="#A9000000"
+            app:cardCornerRadius="24dp"
+            app:contentPadding="4dp">
+
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_height="236dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/exo_volume"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginBottom="-20dp"
+                    android:rotation="270"
+
+                    android:value="2"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    app:labelBehavior="gone"
+                    app:thumbElevation="0dp"
+                    app:trackHeight="24dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    app:srcCompat="@drawable/ic_round_volume_up_24"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/exo_top_controllers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:clipToPadding="false">
+
+            <ImageButton
+                android:id="@+id/exo_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/ic_back_24"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exo_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:backgroundTintMode="src_atop"
+                    android:fontFamily="@font/roboto_bold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:text="Номер серии" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:visibility="gone"
+                app:boxBackgroundColor="#24252a"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@android:color/transparent"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="@color/white"
+                app:startIconTint="@color/white">
+
+                <AutoCompleteTextView
+                    android:id="@+id/exo_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:alpha="0.9"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:fontFamily="@font/roboto_medium"
+                    android:inputType="none"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:ignore="DuplicateSpeakableTextCheck,LabelFor,RtlSymmetry,TextContrastCheck"
+                    tools:text="720p" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/exo_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_slow_motion_video"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/exo_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="26dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_lock_open_24"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:id="@+id/exo_middle_controllers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:alpha="0.5">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="0dp">
+
+                <ImageButton
+                    android:id="@+id/exo_prev_ep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_skip_previous_32"
+                    tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginHorizontal="56dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_exo_play_pause"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp">
+
+                    <ImageButton
+                        android:id="@+id/ib_exo_play_pause"
+                        style="@style/ExoMediaButton.Play"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/anim_play_to_pause"
+                        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:id="@+id/exo_progress_bar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="0dp">
+
+                <ImageButton
+                    android:id="@+id/exo_next_ep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_skip_next_32"
+                    tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/exo_bottom_controllers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/exo_pip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_round_picture_in_picture_alt_24"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@id/exo_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="22dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="00:00" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:text=" / "
+                    android:textColor="#80FFFFFF"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+
+                <TextView
+                    android:id="@id/exo_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/roboto_regular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="24:00" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/exo_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_fast_forward_24"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/exo_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/ic_fullscreen_28"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <view
+                android:id="@id/exo_progress"
+                class="com.azamovhudstc.taskapp.ui.activity.ExoPlayerActivity$ExtendedTimeBar"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                app:ad_marker_color="#A9FFFFFF"
+                app:bar_height="2dp"
+                app:played_color="@color/orange"
+                app:scrubber_color="@color/onHold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

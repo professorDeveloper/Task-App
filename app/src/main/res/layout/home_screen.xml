@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fadingEdge="vertical"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:requiresFadingEdge="vertical"
+    android:scrollbars="vertical"
+    tools:context=".ui.screens.HomeScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/animeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/search_results"
+                        android:textSize="20sp" />
+
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggleButtonGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        app:checkedButton="@id/b_grid_2"
+                        app:selectionRequired="true"
+                        app:singleSelection="true">
+                        <Button
+                            android:id="@+id/b_grid_2"
+                            style="@style/ToggleButtonWithIcon"
+                            android:layout_width="48dp"
+
+                            android:layout_height="48dp"
+                            app:icon="@drawable/ic_round_view_list_24" />
+
+                        <Button
+                            android:id="@+id/b_grid_1"
+                            style="@style/ToggleButtonWithIcon"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            app:icon="@drawable/ic_round_grid_view_24" />
+
+
+
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lessonsRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:clipToPadding="false"
+                    android:requiresFadingEdge="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:spanCount="1"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/itme_course_large" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animeTrendingProgressBar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

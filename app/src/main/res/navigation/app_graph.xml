@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/homeScreen">
+
+    <swipeable
+        android:id="@+id/homeScreen"
+        android:name="com.azamovhudstc.taskapp.ui.screens.HomeScreen"
+        android:label="home_screen"
+        tools:layout="@layout/home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_detailScreen"
+            app:destination="@id/detailScreen"
+            app:enterAnim="@anim/slide_right_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </swipeable>
+    <swipeable
+        android:id="@+id/detailScreen"
+        android:name="com.azamovhudstc.taskapp.ui.screens.DetailScreen"
+        android:label="detail_screen"
+        tools:layout="@layout/detail_screen" />
+</navigation>
